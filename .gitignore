@@ -1,0 +1,16 @@
+*
+!.aliases
+!.bin/
+!.config/alacritty
+!.config/i3
+!.config/nvim
+!.config/polybar
+!.config/rofi
+!.gitconfig*
+!.gitignore
+!.profile
+!.tmux.conf
+!wallpaper/
+!.xinitrc
+!.Xresources
+!.zshrc

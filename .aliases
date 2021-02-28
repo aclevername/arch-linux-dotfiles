@@ -1,0 +1,12 @@
+# Add some easy shortcuts for formatted directory listings and add a touch of color.
+alias ll='ls -laFGh'
+alias la='ls -alFGh'
+alias ls='ls -FGh'
+
+
+# misc shortcuts
+alias 'vim'='nvim'
+alias 'da'='direnv allow'
+alias 'c'='clear'
+
+alias k=kubectl

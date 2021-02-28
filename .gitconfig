@@ -1,0 +1,7 @@
+[include]
+  path = /home/jake/.gitconfig_global
+[user]
+	name = Jake
+	email = jake@weave.works
+[gpg]
+	program = gpg1
