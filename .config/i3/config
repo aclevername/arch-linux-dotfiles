@@ -2,8 +2,8 @@
 
 set $mod Mod4
 new_window 1pixel
-gaps inner 20
-gaps outer 4
+gaps inner 10
+gaps outer 1
 smart_borders on
 #smart_borders no_gaps
 ## Turn borders off
@@ -40,8 +40,8 @@ bindsym XF86AudioMute exec "amixer set Master toggle"
 
 # Backlight key bindings----------------------
 
-bindsym XF86MonBrightnessUp exec "light -A 1"
-bindsym XF86MonBrightnessDown exec "light -U 1"
+bindsym XF86MonBrightnessUp exec "light -A 10"
+bindsym XF86MonBrightnessDown exec "light -U 10"
 
 # Audio control key bindings------------------
 
@@ -58,6 +58,8 @@ bindsym Print exec import -window root ~/Pictures/$(date '+%Y%m%d-%H%M%S').png
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 floating_modifier $mod
 bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+q exec xrandr --output DP-1 --off
+bindsym $mod+Shift+w exec xrandr --output DP-1 --auto --above eDP-1
 bindsym $mod+q kill
 bindsym $mod+j focus left
 bindsym $mod+d exec rofi -show run -display-run ""

@@ -29,6 +29,7 @@ fi
 
 export GOPATH="$HOME/workspace/go"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/var/lib/snapd/snap/bin"
 export PATH="$PATH:~/bin"
 export EDITOR="nvim"
 export GIT_EDITOR="nvim"
