@@ -5,3 +5,5 @@
 	email = jake@weave.works
 [gpg]
 	program = gpg1
+[url "git@github.com:"]
+	insteadOf = https://github.com/

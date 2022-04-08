@@ -74,12 +74,13 @@ plugins=(
 	git
 	kube-ps1
 	kubectl
-	autojump
 )
 
 source $ZSH/oh-my-zsh.sh
 source "$HOME/.profile"
 setxkbmap -option caps:escape
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
 
 # User configuration
 
